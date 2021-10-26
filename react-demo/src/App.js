@@ -37,6 +37,7 @@ function App() {
     ];
   return (
    <div>
+     <h2>First Example</h2>
      <Expense items={expenses} />
      </div>
   );
