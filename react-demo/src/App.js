@@ -2,19 +2,42 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import ExpenseItem from './components/expenseItem';
+import Expense from './components/expneses';
 
 //Functional Component
 
 function App() {
 
   const expenses=[
-    { title:'New Tv',amount:799.49,date:new Date(2021,2,12)},
-    { title:'Car Insurance',amount:294.34, date:new Date(2021,2,20)}
-  ];
+    {
+        id:'e1',
+        title:'Tolilet Paper',
+        amount:94.34,
+        date:new Date(2021,7,15)
+    },
+    {
+        id:'e2',
+        title:'New Tv',
+        amount:799.49,
+        date:new Date(2021,2,12)
+    },
+    {
+        id:'e3',
+        title:'Car Insurance',
+        amount:294.34,
+        date:new Date(2021,2,20)
+    },
+    {
+        id:'e4',
+        title:'New Desk(Wooden)',
+        amount:450,
+        date:new Date(2021,5,20)
+    }
+    
+    ];
   return (
    <div>
-     <ExpenseItem title={expenses[0].title} amount={expenses[0].amount} date={expenses[0].date} />
-     <ExpenseItem  title={expenses[1].title} amount={expenses[1].amount} date={expenses[1].date}  />
+     <Expense items={expenses} />
      </div>
   );
 }
