@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import ExpenseItem from './components/expenseItem';
-import Expense from './components/expneses';
+import Expense from './components/Expenses';
 
 //Functional Component
 
